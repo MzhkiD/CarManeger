@@ -1,0 +1,7 @@
+Toyota,Rav4,2019,60000.0
+BMW,M4,2019,80000.0
+Mercedes,S63 AMG ,2021,200000.0
+Audi,RSQ8,2024,600000.0
+Lamborgini,Revuelto,2025,800000.0
+Rolls Royce,Phantom,2023,1200000.0
+Ferrari,SF90XX Spider,2024,1700000.0
