@@ -1,12 +1,12 @@
 package utils;
 
 import model.Car;
+import model.CarList;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class FileManager {
-    public static void save(List<Car> cars, String filePath) throws IOException {
+    public static void save(CarList<Car> cars, String filePath) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             for (Car car : cars) {
                 writer.write(car.getBrand() + "," + car.getModel() + "," + car.getYear() + "," + car.getPrice());
@@ -15,8 +15,8 @@ public class FileManager {
         }
     }
 
-    public static List<Car> load(String filePath) throws IOException {
-        List<Car> cars = new ArrayList<>();
+    public static CarList<Car> load(String filePath) throws IOException {
+        CarList<Car> cars = new CarList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
