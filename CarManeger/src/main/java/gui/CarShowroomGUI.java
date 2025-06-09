@@ -4,14 +4,15 @@ import model.Car;
 import utils.FileManager;
 import utils.MergeSort;
 
+import model.CarList;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.util.ArrayList;
 
 public class CarShowroomGUI extends JFrame {
     private JTable carTable;
     private DefaultTableModel tableModel;
-    private java.util.List<Car> carList = new ArrayList<>();
+    private CarList<Car> carList = new CarList<>();
 
     public CarShowroomGUI() {
         setTitle("Автосалон");
